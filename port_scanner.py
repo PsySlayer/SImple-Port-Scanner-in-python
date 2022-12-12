@@ -8,7 +8,7 @@ import threading
 import pyfiglet
 import time
 
-banner = pyfiglet.figlet_format(Port Scanner)
+banner = pyfiglet.figlet_format(Port Scanner by Psy Slayer)
 print(banner)
 
 s = socket.socket()
