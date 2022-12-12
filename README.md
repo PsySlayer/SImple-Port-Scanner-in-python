@@ -8,5 +8,6 @@ Must have pyfiglet installed.
 "python -m pip install pyfiglet" or "py -m pip install pyfigle" in cmd
 
 
-run file in linux
-pyton3 filename.py
+run file in linux:
+
+pyton3 port_scanner.py
