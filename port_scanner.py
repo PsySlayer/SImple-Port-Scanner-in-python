@@ -8,7 +8,7 @@ import threading
 import pyfiglet
 import time
 
-banner = pyfiglet.figlet_format("Port Scanner by Misho")
+banner = pyfiglet.figlet_format("Port Scanner by PsySlayer")
 print(banner)
 
 s = socket.socket()
@@ -33,3 +33,4 @@ def check_ports(ip, port, r=1):
 for port in ports:
     thread = threading.Thread(target=check_ports(ip, port), args=(port,))
     thread.start()
+
