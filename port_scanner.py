@@ -23,7 +23,7 @@ def check_ports(ip, port, r=1):
         s.settimeout(0.7)
         r = s.connect_ex((ip, port))
         if r == 0:
-            con = f"Port{port} is Open"
+            con = f"Port {port} is Open"
             print(con)
         s.close()
     except Exception as e:
