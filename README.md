@@ -5,7 +5,7 @@ Must have pyfiglet installed.
 
 #!usrbinpython3
 
-"python -m pip install pyfiglet" or "py -m pip install pyfigle" in cmd
+"python -m pip install pyfiglet" or "py -m pip install pyfigler" in cmd
 
 
 run file in linux:
