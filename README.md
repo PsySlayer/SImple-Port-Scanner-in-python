@@ -10,4 +10,4 @@ Must have pyfiglet installed.
 
 run file in linux:
 
-pyton3 port_scanner.py
+pyton3 port_scanner.py ip
