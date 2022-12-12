@@ -1,14 +1,14 @@
-#!usrbinpython3
+#!/usr/bin/python3
 
 #imports
 import sys
 import socket
-# Must have pyfiglet installed on device. python -m pip install pyfiglet or py -m pip install pyfigle in cmd
+# Must have pyfiglet installed on device. "python -m pip install pyfiglet" or "py -m pip install pyfigle" in cmd
 import threading
 import pyfiglet
 import time
 
-banner = pyfiglet.figlet_format(Port Scanner by Psy Slayer)
+banner = pyfiglet.figlet_format("Port Scanner by Misho")
 print(banner)
 
 s = socket.socket()
@@ -17,19 +17,19 @@ ports = {1,3,4,6,7,9,13,17,19,20,21,22,23,24,25,26,30,32,33,37,42,43,49,53,70,79
 
 open_ports = []
 
-def check_ports(ip, port, r=1)
-    try
+def check_ports(ip, port, r=1):
+    try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(0.7)
         r = s.connect_ex((ip, port))
-        if r == 0
-            con = fPort{port} is Open
+        if r == 0:
+            con = f"Port{port} is Open"
             print(con)
         s.close()
-    except Exception as e
+    except Exception as e:
         pass
 
 
-for port in ports
+for port in ports:
     thread = threading.Thread(target=check_ports(ip, port), args=(port,))
     thread.start()
